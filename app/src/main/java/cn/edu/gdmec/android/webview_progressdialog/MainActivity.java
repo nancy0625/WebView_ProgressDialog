@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
         progressBar = ProgressDialog.show(MainActivity.this,null,"正在进入网页，稍等。。。");
         webView = (WebView)this.findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://www.baidu.com");
-      //  webView.loadUrl("file:///android_asset/phonebook.html");
+       // webView.loadUrl("http://www.baidu.com");
+       webView.loadUrl("file:///android_asset/phonebook.html");
         alertDialog = new AlertDialog.Builder(this).create();
         webView.setWebViewClient(new MyWebViewClient());
     }
